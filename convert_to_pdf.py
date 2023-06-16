@@ -50,5 +50,5 @@ def convert_images_to_pdf(image_dir, output_path):
 
 # Ejemplo de uso
 image_directory = 'D:/samir/Pictures/Saved Pictures'
-output_pdf_path = 'resultado.pdf'
+output_pdf_path = 'C:/Users/samir/OneDrive/Escritorio/resultado.pdf'
 convert_images_to_pdf(image_directory, output_pdf_path)
