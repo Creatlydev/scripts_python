@@ -34,14 +34,14 @@ def convert_images_to_pdf(image_dir, output_path):
         scale = min(max_width / image_width, max_height / image_height)
 
         # Calcular la posición centrada de la imagen en la página PDF
-        x = (max_width - (image_width * scale - 30)) / 2
-        y = (max_height - (image_height * scale - 30)) / 2
+        x = (max_width - (image_width * scale - 20)) / 2
+        y = (max_height - (image_height * scale - 20)) / 2
 
         # Agregar una nueva página al PDF
         pdf.add_page()
 
         # Agregar la imagen al PDF, centrada
-        pdf.image(image_path, x, y, image_width * scale - 30, image_height * scale - 30)
+        pdf.image(image_path, x, y, image_width * scale - 20, image_height * scale - 20)
 
     # Guardar el PDF resultante
     pdf.output(output_path, 'F')
@@ -50,5 +50,5 @@ def convert_images_to_pdf(image_dir, output_path):
 
 # Ejemplo de uso
 image_directory = 'D:/samir/Pictures/Saved Pictures'
-output_pdf_path = 'C:/Users/samir/OneDrive/Escritorio/resultado.pdf'
+output_pdf_path = 'C:/Users/samir/OneDrive/Escritorio/convert_pdf_result.pdf'
 convert_images_to_pdf(image_directory, output_pdf_path)
